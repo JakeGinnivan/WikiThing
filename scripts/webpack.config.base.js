@@ -15,10 +15,17 @@ module.exports = {
     filename: 'bundle.js'
   },
   resolve: {
+    modulesDirectories: [
+      'app',
+      'node_modules'
+    ],
     extensions: ['', '.js']
   },
   plugins: [
-    new HtmlWebpackPlugin({ title: 'Wiki Editor' }),
+    new HtmlWebpackPlugin({
+      title: 'Wiki Editor',
+      template: 'app/index.html'
+    }),
     new CleanWebpackPlugin(['dist'], { root: path.normalize(path.join(__dirname, '../')) })
   ]
 }
