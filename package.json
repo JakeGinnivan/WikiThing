@@ -1,0 +1,9 @@
+{
+  "name": "static-wiki-editor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app/index.js",
+  "scripts": {
+  },
+  "author": "Jake Ginnivan"
+}
