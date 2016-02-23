@@ -1,1 +1,1 @@
-require('./app.scss')
+import './app.scss'

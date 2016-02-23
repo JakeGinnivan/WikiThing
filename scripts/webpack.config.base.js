@@ -1,12 +1,12 @@
 var path = require('path')
-var webpack = require('webpack')
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 var CleanWebpackPlugin = require('clean-webpack-plugin')
 
 module.exports = {
   module: {
     loaders: [
-      { test: /\.json$/, loader: 'json-loader' },
+      { test: /\.js$/, loaders: ['babel', 'eslint'], exclude: /node_modules/ },
+      { test: /\.json$/, loader: 'json' },
       { test: /\.scss/, loaders: ['style', 'css', 'sass'] }
     ]
   },
