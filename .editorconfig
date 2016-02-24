@@ -6,11 +6,10 @@ root = true
 end_of_line = lf
 insert_final_newline = true
 
-
-[{.babelrc,.eslintrc}]
+[{.babelrc,.eslintrc,.bootstraprc}]
 indent_style = space
 indent_size = 2
 
-[*.{json,yml,js,.html}]
+[*.{json,yml,js,html}]
 indent_style = space
 indent_size = 2

@@ -9,6 +9,7 @@ config.devtool = 'cheap-module-eval-source-map'
 
 config.entry = [
   'webpack-hot-middleware/client?path=http://localhost:' + process.env.PORT + '/__webpack_hmr',
+  'bootstrap-loader',
   './app/index'
 ]
 
